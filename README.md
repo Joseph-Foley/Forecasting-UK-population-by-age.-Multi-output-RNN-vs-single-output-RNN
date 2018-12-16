@@ -18,6 +18,7 @@ This repository has two notebooks. The first (“EuroStat Pop x Age data shaping
 The second notebook (“UK Pop X Age RNN models”) shows the construction of multiple RNN models and their output compared to the original data. The first three models attempt to predict all 5 age brackets at once. Finally each age bracket is individually fitted to an RNN model that outputs a single series. The predictions are gathered up and compared to the original data. I then judge which approach was better at forecasting.
 
 Results:
+
 The multi series predictions were considerably inferior to just fitting models to a single series. The assumption that the RNN would learn about the age bracket interactions and thus produce better forecasts did not hold. This is could be due to over fitting. The additional variables may have just added more noise. 
 
 The models used were quite simple. A more advanced model may have produced better results. However the single series predictions were fairly accurate even with simple models and so making something more advanced simply isn’t needed for this particular dataset.
